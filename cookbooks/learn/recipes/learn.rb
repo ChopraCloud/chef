@@ -25,6 +25,7 @@ end
 #execute 'command-test' do
 #	command 'echo blah >> /etc/motd'
 #	only_if { File.exists?('/etc/motd') }
-end
+#end
+
 
 
