@@ -19,10 +19,12 @@ end
 
 file '/etc/motd' do
 	content 'Welcome to my server!'
+	content 'Have a good training day! :)'
 end
 
-execute 'command-test' do
-	command 'echo blah >> /etc/motd'
-	only_if { File.exists?('/etc/motd') }
+#execute 'command-test' do
+#	command 'echo blah >> /etc/motd'
+#	only_if { File.exists?('/etc/motd') }
 end
+
 
